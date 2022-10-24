@@ -1,0 +1,33 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  gap: 1rem;
+  padding:1rem 2rem 0 2rem;
+}
+
+.header .header-image img {
+  width: 8rem;
+  border-radius: 0.4rem;
+}
+
+.header-data h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.header-data .contact {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-data p {
+  font-size: 1rem;
+  padding: 0.2rem 0;
+}
+
+.header-data a,
+.header-data a:visited {
+  color: inherit;
+  text-decoration: none;
+}

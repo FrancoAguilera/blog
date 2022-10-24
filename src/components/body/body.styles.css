@@ -1,0 +1,14 @@
+.article-content {
+  padding: 1rem 1rem;
+}
+
+.article-content h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  padding-bottom: 2rem;
+  font-style: italic;
+}
+
+.article-content p {
+  padding-bottom: 1rem;
+}
