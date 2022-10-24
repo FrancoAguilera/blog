@@ -1,5 +1,29 @@
 .footer {
+  height: 5rem;
+  padding: 2rem 2rem 0 2rem;
   background: #343434;
-  height: 7rem;
   color: #f1f1f1;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.footer .contact {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer p {
+  font-size: 1rem;
+  padding: 0.2rem 0;
+}
+
+.footer a,
+.footer a:visited {
+  color: inherit;
+  text-decoration: none;
 }
