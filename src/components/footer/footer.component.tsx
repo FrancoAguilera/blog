@@ -5,7 +5,7 @@ type Props = {};
 
 export const Footer = (props: Props) => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="contact">
         <div>
           <a href="https://github.com/FrancoAguilera" target="_blank" rel="noreferrer">
@@ -23,6 +23,6 @@ export const Footer = (props: Props) => {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };

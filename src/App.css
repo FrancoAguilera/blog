@@ -1,3 +1,19 @@
+:root {
+  /*colors*/
+  --color-dark: #0b0c0d;
+  --color-alpha-dark: rgba(67, 67, 67, 0.3);
+  --color-light-white: #fff;
+  --color-light-gray: #f1f2f4;
+  --color-normal-gray: #717c7d;
+  --color-blackboard: #2c2c2c;
+  /*fonts*/
+  --font-thin-200: 200;
+  --font-title-size: 2rem;
+  --font-subtitle-size: 1.5rem;
+  --font-subtitle-size-1: 1.2rem;
+  --font-text-normal: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +27,8 @@ body {
 }
 
 body {
-  background: #f1f1f1;
-  color: #464646;
+  background: var(--color-light-gray);
+  color: var(--color-dark);
 }
 
 .layout {
@@ -40,4 +56,14 @@ body {
   -moz-transition:all .3s ease-in-out;
   -o-transition:all .3s ease-in-out;
   transition:all .3s ease-in-out;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

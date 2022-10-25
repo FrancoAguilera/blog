@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 11fr;
   gap: 1rem;
-  padding:1rem 2rem 0 2rem;
+  padding:1rem 2rem;
 }
 
 .header .header-image img {
@@ -11,13 +11,13 @@
 }
 
 .header-data h2 {
-  font-size: 2rem;
-  font-weight: 200;  
+  font-size: var(--font-title-size);
+  font-weight: var(--font-thin-200);  
   padding-bottom: 0.5rem;
 }
 
 .header-data h3 {
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: var(--font-subtitle-size);
+  font-weight: var(--font-thin-200);
   padding-bottom: 1rem;
 }

@@ -5,7 +5,7 @@ type Props = {};
 
 export const Body = (props: Props) => {
   return (
-    <div className="article-content">
+    <article className="article-content">
       <h3>Lorem ipsum dolor sit.</h3>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sunt eaque consequuntur eos facere, nesciunt
@@ -25,6 +25,6 @@ export const Body = (props: Props) => {
         Similique, expedita tenetur quod sequi, numquam cumque corrupti soluta a, consequuntur natus nesciunt totam
         eius. Quaerat.
       </p>
-    </div>
+    </article>
   );
 };

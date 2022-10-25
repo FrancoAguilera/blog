@@ -1,13 +1,13 @@
 .footer {
   height: 5rem;
   padding: 2rem 2rem 0 2rem;
-  background: #343434;
-  color: #f1f1f1;
-}
+  background: var(--color-dark);
+  color: var(--color-light-white);
+} 
 
 .footer h3 {
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: var(--font-subtitle-size);
+  font-weight: var(--font-thin-200);
   padding-bottom: 1rem;
 }
 
@@ -17,8 +17,8 @@
   gap: 1rem;
 }
 
-.footer p {
-  font-size: 1rem;
+.footer a {
+  font-size: var(--font-text-normal);
   padding: 0.2rem 0;
 }
 

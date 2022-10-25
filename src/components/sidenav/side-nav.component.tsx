@@ -11,10 +11,10 @@ export const Sidenav = ({}: Props) => {
           <a href="#">Lorem ipsum</a>
         </li>
         <li className="nav-item">
-          <a href="#">Officia consequatur</a>
+          <a href="#"> Officia consequatur</a>
         </li>
         <li className="nav-item">
-          <a href="#">Cum ex</a>
+          <a href="#">Cut este</a>
         </li>
         <li className="nav-item">
           <a href="#">Porro, deserunt</a>

@@ -1,0 +1,19 @@
+.editor-container {
+  padding-right: 1rem;
+}
+
+.quill {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  height: 100%;
+}
+
+.ql-container {
+  font-size: var(--font-text-normal);
+}
+
+.ql-snow .ql-editor pre.ql-syntax {
+  background-color: var(--color-blackboard);
+  color: #f8f8f2;
+  overflow: visible;
+}
