@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from "react";
-
-import ReactQuill from "react-quill";
-import { formats, modules } from "./editor.config.ts";
-
-import "react-quill/dist/quill.snow.css";
-import "highlight.js/styles/atom-one-dark.css";
+import React, { useState } from "react";
+import { TextEditor } from "../text-editor/text-editor.component.tsx";
 import "./editor.styles.css";
 
 export const EditorPage = () => {
-  const [article, setArticle] = useState("");
   const [title, setTitle] = useState("");
 
   const savepost = () => {
@@ -27,7 +21,7 @@ export const EditorPage = () => {
   return (
     <div className="editor-container">
       <input value={title} onChange={titleHandleChange} className="editor-title" type="text" placeholder="Title..." />
-      <ReactQuill value={article} onChange={setArticle} theme="snow" modules={modules} formats={formats} />
+      <TextEditor />
       <div className="editor-save">
         <button className="btn" onClick={savepost}>
           Save

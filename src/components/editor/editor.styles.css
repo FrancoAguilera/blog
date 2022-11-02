@@ -13,24 +13,8 @@
   font-style: italic;
 }
 
-.quill {
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  height: 100%;
-}
-
-.ql-container {
-  font-size: var(--font-text-normal);
-}
-
-.ql-snow .ql-editor pre.ql-syntax {
-  background-color: var(--color-blackboard);
-  color: #f8f8f2;
-  overflow: visible;
-}
-
 .editor-save {
   padding: 1rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }

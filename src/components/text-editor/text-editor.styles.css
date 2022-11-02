@@ -1,0 +1,22 @@
+.quill {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  height: 100%;
+}
+
+.ql-container {
+  font-size: var(--font-text-normal);
+}
+
+.ql-bubble .ql-editor pre.ql-syntax,
+.ql-snow .ql-editor pre.ql-syntax {
+  background-color: var(--color-blackboard);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.ql-bubble .ql-editor h1 {
+  font-size: 3rem;
+}
