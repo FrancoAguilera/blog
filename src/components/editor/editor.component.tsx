@@ -1,55 +1,38 @@
-import React, { useState } from "react";
-import hljs from "highlight.js";
+import React, { useEffect, useState } from "react";
+
 import ReactQuill from "react-quill";
+import { formats, modules } from "./editor.config.ts";
 
 import "react-quill/dist/quill.snow.css";
 import "highlight.js/styles/atom-one-dark.css";
 import "./editor.styles.css";
 
-hljs.configure({
-  languages: ["javascript", "ruby", "python", "rust", "html", "css"],
-});
-
-const modules = {
-  syntax: {
-    highlight: (text) => hljs.highlightAuto(text).value,
-  },
-  toolbar: [
-    [{ header: 1 }, { header: 2 }], // custom button values
-    ["bold", "italic", "underline"],
-    ["blockquote"],
-    [{ list: "ordered" }, { list: "bullet" }],
-    ["link"],
-    ["clean"],
-    ["code-block"],
-  ],
-  clipboard: {
-    matchVisual: true,
-  },
-};
-
-const formats = [
-  "header",
-  "font",
-  "size",
-  "bold",
-  "italic",
-  "underline",
-  "strike",
-  "blockquote",
-  "list",
-  "bullet",
-  "indent",
-  "link",
-  "code-block",
-];
-
 export const EditorPage = () => {
-  const [value, setValue] = useState("");
+  const [article, setArticle] = useState("");
+  const [title, setTitle] = useState("");
+
+  const savepost = () => {
+    const payload = {
+      title,
+      article,
+    };
+
+    console.log(payload);
+  };
+
+  const titleHandleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setTitle(e.target.value);
+  };
 
   return (
     <div className="editor-container">
-      <ReactQuill value={value} onChange={setValue} theme="snow" modules={modules} formats={formats} />
+      <input value={title} onChange={titleHandleChange} className="editor-title" type="text" placeholder="Title..." />
+      <ReactQuill value={article} onChange={setArticle} theme="snow" modules={modules} formats={formats} />
+      <div className="editor-save">
+        <button className="save-button" onClick={savepost}>
+          Save
+        </button>
+      </div>
     </div>
   );
 };
