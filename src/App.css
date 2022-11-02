@@ -41,7 +41,9 @@ body {
 .main-block {
   display: grid;
   grid-template-columns: 16rem auto;
-  gap: 1rem
+  gap: 1rem;
+  max-width: 1240px;
+
 }
 
 /*******HELPERS*******/
@@ -61,6 +63,24 @@ body {
 .blink {
   animation: blinker 1s linear infinite;
 }
+
+.btn {
+  padding: 0.5rem 1.5rem;
+}
+
+/*******EDITOR CODE*******/
+.ql-bubble .ql-editor pre.ql-syntax,
+.ql-snow .ql-editor pre.ql-syntax {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.ql-bubble .ql-editor h1 {
+  font-size: 3rem;
+}
+
 
 @keyframes blinker {
   50% {

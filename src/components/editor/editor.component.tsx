@@ -29,7 +29,7 @@ export const EditorPage = () => {
       <input value={title} onChange={titleHandleChange} className="editor-title" type="text" placeholder="Title..." />
       <ReactQuill value={article} onChange={setArticle} theme="snow" modules={modules} formats={formats} />
       <div className="editor-save">
-        <button className="save-button" onClick={savepost}>
+        <button className="btn" onClick={savepost}>
           Save
         </button>
       </div>
