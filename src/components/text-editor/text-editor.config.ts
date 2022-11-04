@@ -6,7 +6,7 @@ hljs.configure({
 
 export const modules = {
   syntax: {
-    highlight: (text) => hljs.highlightAuto(text).value,
+    highlight: (text: string) => hljs.highlightAuto(text).value,
   },
   toolbar: [
     [{ header: 1 }, { header: 2 }],

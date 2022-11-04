@@ -1,17 +1,12 @@
 import React, { useState } from "react";
-import { TextEditor } from "../text-editor/text-editor.component.tsx";
+import { TextEditor } from "../text-editor/text-editor.component";
 import "./editor.styles.css";
 
 export const EditorPage = () => {
   const [title, setTitle] = useState("");
 
   const savepost = () => {
-    const payload = {
-      title,
-      article,
-    };
-
-    console.log(payload);
+    console.log(title);
   };
 
   const titleHandleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

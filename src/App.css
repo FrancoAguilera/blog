@@ -39,11 +39,9 @@ body {
 }
 
 .main-block {
-  display: grid;
-  grid-template-columns: 16rem auto;
-  gap: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
   max-width: 1240px;
-
 }
 
 /*******HELPERS*******/
