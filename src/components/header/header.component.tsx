@@ -20,9 +20,6 @@ export const Header = (props: Props) => {
         <h3>
           <i>"Psiconauta del inconsciente, yo todo lo entiendo, yo todo lo entiendo..."</i>
         </h3>
-        <Link to={"/editor"}>
-          <button className="btn">Create Post</button>
-        </Link>
       </div>
     </header>
   );

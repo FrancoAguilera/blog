@@ -31,6 +31,16 @@ body {
   color: var(--color-dark);
 }
 
+input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+}
+
 .layout {
   min-height: 100vh;
   display: grid;
@@ -44,6 +54,7 @@ body {
   max-width: 1240px;
   padding-bottom: 1rem;
 }
+
 
 /*******HELPERS*******/
 .box-shadow {
@@ -61,10 +72,6 @@ body {
 
 .blink {
   animation: blinker 1s linear infinite;
-}
-
-.btn {
-  padding: 0.5rem 1.5rem;
 }
 
 @keyframes blinker {

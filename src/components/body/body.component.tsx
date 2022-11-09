@@ -17,7 +17,7 @@ export const Body = () => {
       const article = articles.find((article) => article.id === id);
       setArticle(article);
     }
-  }, [id, article]);
+  }, [id, articles]);
 
   if (article === undefined) {
     return <h4>Loading...</h4>;
@@ -26,7 +26,7 @@ export const Body = () => {
   return (
     <article className="article-content">
       <h3>{article.title}</h3>
-      <TextEditor readOnly={true} articleContent={article!} />
+      <TextEditor articleContent={article!} />
     </article>
   );
 };
