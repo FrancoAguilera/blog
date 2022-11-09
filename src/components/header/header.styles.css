@@ -10,6 +10,11 @@
   border-radius: 0.4rem;
 }
 
+.header-data a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header-data h2 {
   font-size: var(--font-title-size);
   font-weight: var(--font-thin-200);  

@@ -1,7 +1,6 @@
 .quill {
   display: grid;
   grid-template-rows: min-content 1fr;
-  height: 100%;
 }
 
 .ql-container {
@@ -19,4 +18,10 @@
 
 .ql-bubble .ql-editor h1 {
   font-size: 3rem;
+}
+
+.editor-save {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
 }

@@ -5,7 +5,6 @@
 .article-content h3 {
   font-size: var(--font-title-size);
   font-weight: var(--font-thin-200);
-  padding-bottom: 2rem;
   font-style: italic;
 }
 
